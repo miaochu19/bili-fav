@@ -1,0 +1,7 @@
+- insert:
+    - id: dsh-bili-fav-plugin
+      name: 'dsh-bili-fav-plugin'
+      inject: [tools]
+      config:
+        projectRoot: ''
+        timeoutMs: 1800000

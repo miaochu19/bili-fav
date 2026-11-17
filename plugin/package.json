@@ -1,0 +1,33 @@
+{
+  "name": "dsh-bili-fav-plugin",
+  "version": "0.1.0",
+  "description": "DSH 工具壳：B 站收藏夹知识库（bili_library / bili_find / bili_read / bili_note）。业务引擎在 dsh-bili-fav 项目的 lib/ops.mjs。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "tools.mjs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "bilibili",
+    "favorites",
+    "obsidian"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

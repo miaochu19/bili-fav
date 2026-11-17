@@ -1,0 +1,26 @@
+{
+  "name": "dsh-bili-fav",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "B 站收藏夹整理与视频理解流水线（DSH、MCP 与 CLI）",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:local": "node tests/run-all.mjs",
+    "test:plugin": "node tests/plugin.test.mjs",
+    "test:portable": "node tests/portable.test.mjs",
+    "check:plugin": "node scripts/check-plugin-schema.mjs",
+    "doctor": "node cli/fav.mjs doctor",
+    "auth": "node cli/fav.mjs auth",
+    "list": "node cli/fav.mjs list",
+    "fetch": "node cli/fav.mjs fetch --all",
+    "stats": "node cli/fav.mjs stats"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.4.3"
+  }
+}
